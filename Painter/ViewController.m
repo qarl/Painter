@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "PainterView.h"
 
 @interface ViewController ()
 
@@ -14,9 +15,12 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    PainterView* painterView = [[PainterView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:painterView];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -14,6 +14,8 @@
 		D18B6FB81AF5406400693B0C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D18B6FB71AF5406400693B0C /* Images.xcassets */; };
 		D18B6FBB1AF5406400693B0C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D18B6FB91AF5406400693B0C /* LaunchScreen.xib */; };
 		D18B6FC71AF5406400693B0C /* PainterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D18B6FC61AF5406400693B0C /* PainterTests.m */; };
+		D18B6FD21AF540B500693B0C /* PainterView.m in Sources */ = {isa = PBXBuildFile; fileRef = D18B6FD11AF540B500693B0C /* PainterView.m */; };
+		D18B6FD41AF546B800693B0C /* Mona.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D18B6FD31AF546B800693B0C /* Mona.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		D18B6FC01AF5406400693B0C /* PainterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PainterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D18B6FC51AF5406400693B0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D18B6FC61AF5406400693B0C /* PainterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PainterTests.m; sourceTree = "<group>"; };
+		D18B6FD01AF540B500693B0C /* PainterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PainterView.h; sourceTree = SOURCE_ROOT; };
+		D18B6FD11AF540B500693B0C /* PainterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PainterView.m; sourceTree = SOURCE_ROOT; };
+		D18B6FD31AF546B800693B0C /* Mona.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mona.jpg; path = ../Mona.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +86,9 @@
 		D18B6FA91AF5406400693B0C /* Painter */ = {
 			isa = PBXGroup;
 			children = (
+				D18B6FD31AF546B800693B0C /* Mona.jpg */,
+				D18B6FD01AF540B500693B0C /* PainterView.h */,
+				D18B6FD11AF540B500693B0C /* PainterView.m */,
 				D18B6FAE1AF5406400693B0C /* AppDelegate.h */,
 				D18B6FAF1AF5406400693B0C /* AppDelegate.m */,
 				D18B6FB11AF5406400693B0C /* ViewController.h */,
@@ -168,6 +176,7 @@
 				TargetAttributes = {
 					D18B6FA61AF5406400693B0C = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 996H9R9E8J;
 					};
 					D18B6FBF1AF5406400693B0C = {
 						CreatedOnToolsVersion = 6.2;
@@ -200,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D18B6FB61AF5406400693B0C /* Main.storyboard in Resources */,
+				D18B6FD41AF546B800693B0C /* Mona.jpg in Resources */,
 				D18B6FBB1AF5406400693B0C /* LaunchScreen.xib in Resources */,
 				D18B6FB81AF5406400693B0C /* Images.xcassets in Resources */,
 			);
@@ -221,6 +231,7 @@
 			files = (
 				D18B6FB31AF5406400693B0C /* ViewController.m in Sources */,
 				D18B6FB01AF5406400693B0C /* AppDelegate.m in Sources */,
+				D18B6FD21AF540B500693B0C /* PainterView.m in Sources */,
 				D18B6FAD1AF5406400693B0C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,6 +357,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Painter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -356,6 +368,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Painter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -414,6 +427,7 @@
 				D18B6FCC1AF5406400693B0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D18B6FCD1AF5406400693B0C /* Build configuration list for PBXNativeTarget "PainterTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +436,7 @@
 				D18B6FCF1AF5406400693B0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
